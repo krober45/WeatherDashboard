@@ -1,0 +1,61 @@
+/*header*/
+#headerTop {
+  font-size: 50px;
+}
+
+/*button*/
+#clearHistory {
+  margin-top: 10px;
+}
+
+/*card containers*/
+h2 {
+  flex: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+.cardLi {
+  padding-top: 0px;
+}
+
+/*style appended list items*/
+.citySearch:hover {
+  background-color: aqua;
+}
+
+li {
+  list-style-type: none;
+}
+
+.uvIndex {
+  list-style-type: none;
+  width: fit-content;
+  text-align: center;
+}
+
+.favorable {
+  background-color: lightgreen;
+}
+
+.moderate {
+  background-color: yellow;
+}
+
+.severe {
+  background-color: red;
+}
+
+/*media*/
+
+@media screen and (max-width: 768px) {
+  .row {
+      display: flex;
+      flex: auto;
+  }
+  
+}

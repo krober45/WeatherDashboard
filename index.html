@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>weatherDashboard</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <span id="headerTop" class="navbar-brand h1 mb-0 w-100 text-center">Weather Dashboard</span>
+        </nav>
+    </header>
+    <main class="row ml-1 my-1">
+        <!--Search for a city-->
+        <aside class="col-3 bg-light">
+            <p class="search-header my-2">
+                Type any city to find out the weather forecast!
+            </p>
+            <form class="input-group mb-3" >
+                <input id="citySearch" type="text" class="form-control" placeholder="Type city name here">
+                <button class="btn btn-primary" type="button" id="citySearchBtn">
+                    <i class="fas fa-search"></i>
+                </button> 
+            </form>
+            <article id="searchHistory"></article>
+            <button class="btn btn-primary mb-2" type="button" id="clearHistory">Clear History</button>
+        </aside>
+        <!--Display search results-->
+        <section class="row col-8 mr-0 ml-1">
+            <h2 id=currentCity>City will display here after search!</h2>
+            <article id="currentWeather" class="col-12"></article>
+            <article class="row col-12 text-center">
+                <h2>5-Day Forecast</h2>
+            </article>
+            <section id="fiveDays" class="row">
+                
+            </section>
+        </section>
+    </main>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--Moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <!--jScript-->
+    <script src="assets/script.js"></script>
+</body>
+</html>
